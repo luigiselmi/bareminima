@@ -1,0 +1,11 @@
+---
+layout: default
+title: Home
+---
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <p>{{ post.day }}&nbsp;<a href="{{ post.url }}">{{ post.title }}</a>&nbsp;{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
